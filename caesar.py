@@ -5,14 +5,14 @@ def main():
     n = len(sys.argv)
 
     if n != 2:
-        print("Usage: Please pass an integer key.")
+        return print("Usage: Please pass an integer key.")
 
     key = sys.argv[1]
     try:
         key = int(sys.argv[1])
         print(f'ciphertext: {caesar(int(key))}')
     except:
-        print("Usage: Please pass an integer key.")
+        print("Usage: Please pass only an integer key")
 
 
 def caesar(key):
